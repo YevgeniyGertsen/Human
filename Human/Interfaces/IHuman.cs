@@ -9,13 +9,10 @@ using System.Threading.Tasks;
 
 namespace Human.Interfaces
 {
-    interface IHuman
+    public interface IHuman
     {
         string name { get; set; }
         int age { get; set; }
-        string city { get; set; }
-        DateTime birth { get; set; }
-        DateTime deathDay {get;set;}
         sex sex { get; set; }
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GeneratorName;
 using Human.ModelHuman;
+using Human.Interfaces;
 
 namespace Human
 {
@@ -12,7 +13,7 @@ namespace Human
     {
         private Random rnd=new Random();
         
-        public Adult adult_g()
+        public IHuman adult_g()
         {
             Adult adult= new Adult();
             adult.age = rnd.Next(16,100);
@@ -27,16 +28,7 @@ namespace Human
             return adult;
         } 
 
-        public void TestOperators ()
-        {
-            Adult a = adult_g();
-            Adult b = adult_g();
-
-            Adult c = a > b;
-
-            Adult s = c++;
-        }
-
+        
 
         public DateTime Generated_B(Adult adult)
         {

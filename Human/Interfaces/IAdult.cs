@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Human.Interfaces
 {
-    interface IAdult
+    public interface IAdult
     {
         bool IsMarried { get; set; }
         bool IsWorked { get; set; }
