@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Human.ModelIdentity;
 using Human.ModelOther;
+using Human.Interfaces;
 
 namespace Human.ModelHuman
 {
@@ -16,8 +17,7 @@ namespace Human.ModelHuman
         first, second, third, none
     }
 
-
-    public abstract class Human 
+    public abstract class Human : IHuman
     {
         public string name { get; set; }
         public int age { get; set; }
@@ -28,9 +28,5 @@ namespace Human.ModelHuman
         public List<Identity> Identites { get; set; }
         public List<Sudimost> Sudimosti { get; set; }
         public List<Adult> Partner;
-
-
-
-
     }
 }

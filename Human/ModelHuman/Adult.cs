@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Human.Education;
-
+using Human.Interfaces;
 
 namespace Human.ModelHuman
 {
     
-    public class Adult: Human
+    public class Adult: Human, IAdult
     {
         public Adult():this(new List<School>()){}
-         public Adult(List<School> schools)
+        public Adult(List<School> schools)
             :this(schools, new List<College>()){}
         public Adult(List<School> schools, List<College> colleges)
             :this(schools, colleges, new List<University>()){}

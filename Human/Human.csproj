@@ -48,6 +48,8 @@
     <Compile Include="Education\School.cs" />
     <Compile Include="Education\University.cs" />
     <Compile Include="HumanGenerated.cs" />
+    <Compile Include="Interfaces\IAdult.cs" />
+    <Compile Include="Interfaces\IHuman.cs" />
     <Compile Include="ModelHuman\Human.cs" />
     <Compile Include="ModelHuman\Adult.cs" />
     <Compile Include="ModelHuman\Invalid.cs" />
