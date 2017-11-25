@@ -15,6 +15,7 @@ namespace Human.Interfaces
         int age { get; set; }
         string city { get; set; }
         DateTime birth { get; set; }
+        DateTime deathDay {get;set;}
         sex sex { get; set; }
     }
 }
